@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Green Messenger</string>
+    <string name="have_an_account">Already have an Account?</string>
+    <string name="create_account">New? Create Account Here</string>
+    <string name="default_name">John Doe</string>
+
+    <string name="rationale_camera">Allow Green Messenger to take pictures and record video?</string>
+    <string name="rationale_storage">Allow Green Messenger to access photos, media, and files on you device?</string>
+
+</resources>

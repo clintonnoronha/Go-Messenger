@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/new_message"
+        android:title="New message"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/my_profile"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/sign_out"
+        android:title="Sign Out"
+        android:tooltipText=""/>
+
+    <item
+        android:id="@+id/about_app"
+        android:title="About"/>
+
+
+</menu>
