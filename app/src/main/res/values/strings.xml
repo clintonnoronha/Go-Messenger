@@ -6,5 +6,6 @@
 
     <string name="rationale_camera">Allow Green Messenger to take pictures and record video?</string>
     <string name="rationale_storage">Allow Green Messenger to access photos, media, and files on you device?</string>
+    <string name="copyright">© Green Messenger 2020</string>
 
 </resources>

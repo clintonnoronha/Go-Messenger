@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\KotlinMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
+            "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\GreenMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Clinton\\.gradle\\caches\\transforms-2\\files-2.1\\4dec79f877fb28a042d1f27c4b32bf3a\\core-1.1.0\\res\\values-mn\\values-mn.xml",

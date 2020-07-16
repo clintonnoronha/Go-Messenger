@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\KotlinMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
+            "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\GreenMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Clinton\\.gradle\\caches\\transforms-2\\files-2.1\\347aa7859370343266dc1e5f2fb9c697\\appcompat-1.1.0\\res\\values-en-rXC\\values-en-rXC.xml",

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
 MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4df998a06f68442e499d1512f3bbd58a\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:2:1-21:12
 MERGED from [com.google.firebase:firebase-common-ktx:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\98d126c281ba25aae3eac872b8fdd5b7\jetified-firebase-common-ktx-19.3.0\AndroidManifest.xml:2:1-21:12
@@ -70,51 +70,51 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Clinton\.gradle\cach
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bf05df378ac04f2d72a7cdbc08b6681c\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\9047072cd0a0edf6657f93ad52097efb\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\69034e6e79da8560f63ef947b7c29493\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
 	package
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:3:5-50
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:3:5-50
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:1-59:12
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:1-61:12
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:2:11-69
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:5:5-6:49
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:5:5-6:49
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:6:9-47
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:6:9-47
 uses-feature#android.hardware.camera.autofocus
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:7:5-8:59
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:7:5-8:59
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:8:9-57
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:8:9-57
 uses-feature#android.hardware.camera.flash
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:9:5-10:55
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:9:5-10:55
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:10:9-53
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:10:9-53
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:11:5-65
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:11:5-65
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:11:22-62
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:11:22-62
 uses-permission#ANDROID.PERMISSION.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:12:5-79
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:12:5-79
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:12:22-77
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:12:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:13:5-80
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:13:5-80
 MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:12:5-81
 MERGED from [com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:13:22-78
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:13:22-78
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:14:5-66
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:14:5-66
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\37054502e459d4775b9c9cdb498b07e4\jetified-firebase-storage-19.1.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\37054502e459d4775b9c9cdb498b07e4\jetified-firebase-storage-19.1.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-database:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a300315b65aa8ed8e20c5b53876e5dd1\jetified-firebase-database-19.3.1\AndroidManifest.xml:26:5-67
@@ -130,13 +130,13 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\fd02a50d56d18c5b4826f01aa302fce3\jetified-play-services-measurement-sdk-api-17.2.2\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\fd02a50d56d18c5b4826f01aa302fce3\jetified-play-services-measurement-sdk-api-17.2.2\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:14:22-64
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:14:22-64
 uses-permission#android.permission.READ_CONTACTS
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:15:5-71
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:15:5-71
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:15:22-69
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:15:22-69
 application
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:17:5-57:19
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:17:5-59:19
 MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:11:5-19:19
 MERGED from [com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4df998a06f68442e499d1512f3bbd58a\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:11:5-19:19
@@ -204,83 +204,87 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Cl
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4dec79f877fb28a042d1f27c4b32bf3a\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:22:9-35
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:20:9-41
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:20:9-41
 	android:roundIcon
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:21:9-58
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:21:9-58
 	android:icon
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:19:9-47
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:19:9-47
 	android:allowBackup
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:18:9-35
 	android:theme
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:23:9-40
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:23:9-40
 activity#android.example.com.kotlinmessenger.messages.ChatLogActivity
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:24:9-28:20
-	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:24:19-59
-meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:25:13-27:68
-	android:value
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:27:17-65
-	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:26:17-63
-activity#android.example.com.kotlinmessenger.messages.NewChatRecyclerView
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:29:9-33:20
-	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:29:19-63
-activity#android.example.com.kotlinmessenger.settings.AboutAppActivity
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:34:9-63
-	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:34:19-60
-activity#android.example.com.kotlinmessenger.messages.LatestMessagesActivity
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:35:9-69
-	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:35:19-66
-activity#android.example.com.kotlinmessenger.startup.SplashActivity
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:36:9-43:20
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:24:9-29:20
 	android:theme
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:38:13-63
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:25:13-45
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:37:13-51
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:24:19-59
+meta-data#android.support.PARENT_ACTIVITY
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:26:13-28:68
+	android:value
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:28:17-65
+	android:name
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:27:17-63
+activity#android.example.com.kotlinmessenger.messages.NewChatRecyclerView
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:30:9-34:20
+	android:name
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:30:19-63
+activity#android.example.com.kotlinmessenger.settings.AboutAppActivity
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:35:9-36:65
+	android:theme
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:36:13-63
+	android:name
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:35:19-60
+activity#android.example.com.kotlinmessenger.messages.LatestMessagesActivity
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:37:9-69
+	android:name
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:37:19-66
+activity#android.example.com.kotlinmessenger.startup.SplashActivity
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:38:9-45:20
+	android:theme
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:40:13-63
+	android:name
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:39:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:39:13-42:29
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:41:13-44:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:40:17-69
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:42:17-69
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:40:25-66
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:42:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:41:17-77
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:41:27-74
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:43:27-74
 activity#android.example.com.kotlinmessenger.startup.SignInActivity
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:44:9-60
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:46:9-60
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:44:19-57
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:46:19-57
 activity#android.example.com.kotlinmessenger.startup.RegisterActivity
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:45:9-62
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:47:9-62
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:45:19-59
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:47:19-59
 provider#androidx.core.content.FileProvider
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:47:9-55:20
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:49:9-57:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:51:13-47
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:53:13-47
 	android:authorities
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:48:13-83
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:50:13-83
 	android:exported
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:50:13-37
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:49:13-62
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:51:13-62
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:52:13-54:54
+ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:54:13-56:54
 	android:resource
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:54:17-51
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:56:17-51
 	android:name
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml:53:17-67
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:55:17-67
 uses-sdk
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
 MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:6:5-8:41
 MERGED from [com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4df998a06f68442e499d1512f3bbd58a\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:6:5-8:41
@@ -413,16 +417,16 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Clinton\
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\9047072cd0a0edf6657f93ad52097efb\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\69034e6e79da8560f63ef947b7c29493\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\69034e6e79da8560f63ef947b7c29493\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:12:9-18:19
 MERGED from [com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4df998a06f68442e499d1512f3bbd58a\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:12:9-18:19

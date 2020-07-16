@@ -3,7 +3,7 @@
     package="android.example.com.kotlinmessenger"
     android:targetSandboxVersion="2"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0.0" >
 
     <uses-sdk
         android:minSdkVersion="21"
@@ -35,7 +35,9 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="android.example.com.kotlinmessenger.messages.ChatLogActivity" >
+        <activity
+            android:name="android.example.com.kotlinmessenger.messages.ChatLogActivity"
+            android:theme="@style/ChatTheme" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".messages.LatestMessagesActivity" />
@@ -45,7 +47,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".messages.LatestMessagesActivity" />
         </activity>
-        <activity android:name="android.example.com.kotlinmessenger.settings.AboutAppActivity" />
+        <activity
+            android:name="android.example.com.kotlinmessenger.settings.AboutAppActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name="android.example.com.kotlinmessenger.messages.LatestMessagesActivity" />
         <activity
             android:name="android.example.com.kotlinmessenger.startup.SplashActivity"

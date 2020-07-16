@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\KotlinMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
+            "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\GreenMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-kk\\values-kk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Clinton\\.gradle\\caches\\transforms-2\\files-2.1\\95e18d810755c8f1f25d0bd567217132\\jetified-play-services-basement-17.0.0\\res\\values-kk\\values.xml",

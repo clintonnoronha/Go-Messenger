@@ -1,5 +1,7 @@
 package android.example.com.kotlinmessenger.model
 
-data class User(val uid: String = "", val username: String = "", val profileImageUrl: String = "") {
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
 
-}
+@Parcelize
+data class User(val uid: String = "", val username: String = "", val profileImageUrl: String = ""): Parcelable

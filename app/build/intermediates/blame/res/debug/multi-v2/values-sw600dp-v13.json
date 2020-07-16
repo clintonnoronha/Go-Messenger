@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\KotlinMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\GreenMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Clinton\\.gradle\\caches\\transforms-2\\files-2.1\\fcfbd8a950e78c953d38a74ec5243cc6\\material-1.0.0\\res\\values-sw600dp-v13\\values-sw600dp-v13.xml",

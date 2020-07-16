@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/new_message"
-        android:title="New message"
-        app:showAsAction="ifRoom" />
+        android:id="@+id/searchUser"
+        android:title="Search"
+        app:showAsAction="ifRoom|collapseActionView"/>
 
     <item
         android:id="@+id/my_profile"
@@ -13,12 +13,10 @@
 
     <item
         android:id="@+id/sign_out"
-        android:title="Sign Out"
-        android:tooltipText=""/>
+        android:title="Sign Out" />
 
     <item
         android:id="@+id/about_app"
-        android:title="About"/>
-
+        android:title="App info"/>
 
 </menu>

@@ -1,9 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".settings.AboutAppActivity">
+    tools:context=".settings.AboutAppActivity"
+    android:background="@color/colorPrimary">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/txtStatic3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txtStatic3"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/txtStatic4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version "
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/txtVersionNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.0"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgMessenger"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/version"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/txtCopyRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgMessenger"
+            android:layout_centerHorizontal="true"
+            android:text="@string/copyright"
+            android:textColor="@color/colorWhite"
+            android:padding="4dp"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -21,7 +21,8 @@
         android:roundIcon="@mipmap/ic_launcher_new_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".messages.ChatLogActivity">
+        <activity android:name=".messages.ChatLogActivity"
+            android:theme="@style/ChatTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".messages.LatestMessagesActivity" />
@@ -31,7 +32,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".messages.LatestMessagesActivity" />
         </activity>
-        <activity android:name=".settings.AboutAppActivity" />
+        <activity android:name=".settings.AboutAppActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity android:name=".messages.LatestMessagesActivity" />
         <activity
             android:name=".startup.SplashActivity"

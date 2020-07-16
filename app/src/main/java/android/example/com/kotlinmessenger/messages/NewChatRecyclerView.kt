@@ -32,6 +32,10 @@ class NewChatRecyclerView : AppCompatActivity() {
         fetchUserDetails()
     }
 
+    companion object {
+        const val USER_NAME_KEY = "USER_NAME_KEY"
+    }
+
     private fun fetchUserDetails() {
         val ref = FirebaseDatabase.getInstance().getReference("/users")
         ref.addListenerForSingleValueEvent(object: ValueEventListener{
@@ -48,7 +52,10 @@ class NewChatRecyclerView : AppCompatActivity() {
                     }
                 }
                 adapter.setOnItemClickListener { item, view ->
+                    val userItem = item as UserItemAdapter
+
                     val intent = Intent(view.context, ChatLogActivity::class.java)
+                    intent.putExtra(USER_NAME_KEY, userItem.user)
                     startActivity(intent)
                     finish()
                 }
