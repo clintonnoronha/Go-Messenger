@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#009688</color>
-    <color name="colorPrimaryDark">#00796b</color>
-    <color name="colorAccent">#76ff03</color>
+    <color name="colorPrimary">#2196f3</color>
+    <color name="colorPrimaryDark">#1976d2</color>
+    <color name="colorAccent">#64b5f6</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
-    <color name="colorGrey">#DCDCDC</color>
+    <color name="colorGrey">#A4A4A4</color>
+    <color name="colorProfileBackground">#FFFFFF</color>
+    <color name="colorText">#000000</color>
+    <color name="colorChatBackground">#DCDCDC</color>
+    <color name="colorSenderBubble">#d2f8d2</color>
+    <color name="colorReceiverBubble">#FFFFFF</color>
+    <color name="colorLink">#2979ff</color>
+    <color name="colorMessage">#FFFFFF</color>
+    <color name="colorMenu">#FFFFFF</color>
+    <color name="colorBottomDialog">#FFFFFF</color>
 </resources>

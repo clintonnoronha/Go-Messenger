@@ -11,328 +11,363 @@
 9-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml
 10
 11    <uses-feature android:name="android.hardware.camera" />
-11-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:5:5-6:49
-11-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:6:9-47
+11-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:5:5-60
+11-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:5:19-57
 12    <uses-feature android:name="android.hardware.camera.autofocus" />
-12-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:7:5-8:59
-12-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:8:9-57
+12-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:6:5-70
+12-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:6:19-67
 13    <uses-feature android:name="android.hardware.camera.flash" />
-13-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:9:5-10:55
-13-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:10:9-53
+13-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:7:5-66
+13-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:7:19-63
 14
 15    <uses-permission android:name="android.permission.CAMERA" />
-15-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:11:5-65
-15-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:11:22-62
+15-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:9:5-65
+15-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:9:22-62
 16    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
-16-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:12:5-79
-16-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:12:22-77
+16-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:10:5-80
+16-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:10:22-77
 17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-17-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:13:5-80
-17-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:13:22-78
+17-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:11:5-81
+17-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:11:22-78
 18    <uses-permission android:name="android.permission.INTERNET" />
-18-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:14:5-66
-18-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:14:22-64
-19    <uses-permission android:name="android.permission.READ_CONTACTS" />
-19-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:15:5-71
-19-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:15:22-69
-20    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
-20-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:11:5-80
-20-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:11:22-77
-21    <!-- <uses-sdk android:minSdkVersion="14"/> -->
-22    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-22-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\37054502e459d4775b9c9cdb498b07e4\jetified-firebase-storage-19.1.1\AndroidManifest.xml:26:5-79
-22-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\37054502e459d4775b9c9cdb498b07e4\jetified-firebase-storage-19.1.1\AndroidManifest.xml:26:22-76
-23    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-23-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\c4306fd4be63e3e030baafd1b27f3c6d\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:24:5-68
-23-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\c4306fd4be63e3e030baafd1b27f3c6d\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:24:22-65
-24    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-24-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
-24-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
-25    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-25-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:26:5-110
-25-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:26:22-107
-26
-27    <application
-27-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:17:5-59:19
-28        android:allowBackup="true"
-28-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:18:9-35
-29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-29-->[androidx.core:core:1.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4dec79f877fb28a042d1f27c4b32bf3a\core-1.1.0\AndroidManifest.xml:24:18-86
-30        android:debuggable="true"
-31        android:icon="@mipmap/ic_launcher_new"
-31-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:19:9-47
-32        android:label="@string/app_name"
-32-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:20:9-41
-33        android:roundIcon="@mipmap/ic_launcher_new_round"
-33-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:21:9-58
-34        android:supportsRtl="true"
-34-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:22:9-35
-35        android:testOnly="true"
-36        android:theme="@style/AppTheme" >
-36-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:23:9-40
-37        <activity
-37-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:24:9-29:20
-38            android:name="android.example.com.kotlinmessenger.messages.ChatLogActivity"
-38-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:24:19-59
-39            android:theme="@style/ChatTheme" >
-39-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:25:13-45
-40            <meta-data
-40-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:26:13-28:68
-41                android:name="android.support.PARENT_ACTIVITY"
-41-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:27:17-63
-42                android:value=".messages.LatestMessagesActivity" />
-42-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:28:17-65
-43        </activity>
-44        <activity android:name="android.example.com.kotlinmessenger.messages.NewChatRecyclerView" >
-44-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:30:9-34:20
-44-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:30:19-63
-45            <meta-data
-45-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:26:13-28:68
-46                android:name="android.support.PARENT_ACTIVITY"
-46-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:27:17-63
-47                android:value=".messages.LatestMessagesActivity" />
-47-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:28:17-65
-48        </activity>
-49        <activity
-49-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:35:9-36:65
-50            android:name="android.example.com.kotlinmessenger.settings.AboutAppActivity"
-50-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:35:19-60
-51            android:theme="@style/Theme.AppCompat.NoActionBar" />
-51-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:36:13-63
-52        <activity android:name="android.example.com.kotlinmessenger.messages.LatestMessagesActivity" />
-52-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:37:9-69
-52-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:37:19-66
-53        <activity
-53-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:38:9-45:20
-54            android:name="android.example.com.kotlinmessenger.startup.SplashActivity"
-54-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:39:13-51
-55            android:theme="@style/Theme.AppCompat.NoActionBar" >
-55-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:40:13-63
-56            <intent-filter>
-56-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:41:13-44:29
-57                <action android:name="android.intent.action.MAIN" />
-57-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:42:17-69
-57-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:42:25-66
-58
-59                <category android:name="android.intent.category.LAUNCHER" />
-59-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:43:17-77
-59-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:43:27-74
-60            </intent-filter>
-61        </activity>
-62        <activity android:name="android.example.com.kotlinmessenger.startup.SignInActivity" />
-62-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:46:9-60
-62-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:46:19-57
-63        <activity android:name="android.example.com.kotlinmessenger.startup.RegisterActivity" />
-63-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:47:9-62
-63-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:47:19-59
-64
-65        <provider
-65-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:49:9-57:20
-66            android:name="androidx.core.content.FileProvider"
-66-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:51:13-62
-67            android:authorities="android.example.com.kotlinmessenger.fileprovider"
-67-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:50:13-83
-68            android:exported="false"
-68-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:52:13-37
-69            android:grantUriPermissions="true" >
-69-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:53:13-47
-70            <meta-data
-70-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:54:13-56:54
-71                android:name="android.support.FILE_PROVIDER_PATHS"
-71-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:55:17-67
-72                android:resource="@xml/file_paths" />
-72-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:56:17-51
-73        </provider>
-74
-75        <service
-75-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:12:9-18:19
-76            android:name="com.google.firebase.components.ComponentDiscoveryService"
-76-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:13:13-84
-77            android:directBootAware="true"
-77-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\482746bb9f6dd605e10e5fd384c49a9d\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
-78            android:exported="false" >
-78-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:14:13-37
-79            <meta-data
-79-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:15:13-17:85
-80                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
-80-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:16:17-122
-81                android:value="com.google.firebase.components.ComponentRegistrar" />
-81-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f7509259ce33d36b179d8bb54a0f2957\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:17:17-82
-82            <meta-data
-82-->[com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4df998a06f68442e499d1512f3bbd58a\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:15:13-17:85
-83                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
-83-->[com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4df998a06f68442e499d1512f3bbd58a\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:16:17-124
-84                android:value="com.google.firebase.components.ComponentRegistrar" />
-84-->[com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\4df998a06f68442e499d1512f3bbd58a\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:17:17-82
-85            <meta-data
-85-->[com.google.firebase:firebase-common-ktx:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\98d126c281ba25aae3eac872b8fdd5b7\jetified-firebase-common-ktx-19.3.0\AndroidManifest.xml:15:13-17:85
-86                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
-86-->[com.google.firebase:firebase-common-ktx:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\98d126c281ba25aae3eac872b8fdd5b7\jetified-firebase-common-ktx-19.3.0\AndroidManifest.xml:16:17-113
-87                android:value="com.google.firebase.components.ComponentRegistrar" />
-87-->[com.google.firebase:firebase-common-ktx:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\98d126c281ba25aae3eac872b8fdd5b7\jetified-firebase-common-ktx-19.3.0\AndroidManifest.xml:17:17-82
-88            <meta-data
-88-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
-89                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-89-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
-90                android:value="com.google.firebase.components.ComponentRegistrar" />
-90-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
-91            <meta-data
-91-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\37054502e459d4775b9c9cdb498b07e4\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
-92                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-92-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\37054502e459d4775b9c9cdb498b07e4\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
-93                android:value="com.google.firebase.components.ComponentRegistrar" />
-93-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\37054502e459d4775b9c9cdb498b07e4\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
-94            <meta-data
-94-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a300315b65aa8ed8e20c5b53876e5dd1\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
-95                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-95-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a300315b65aa8ed8e20c5b53876e5dd1\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
-96                android:value="com.google.firebase.components.ComponentRegistrar" />
-96-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a300315b65aa8ed8e20c5b53876e5dd1\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+18-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:12:5-67
+18-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:12:22-64
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:13:5-79
+19-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:13:22-76
+20    <uses-permission android:name="android.permission.READ_CONTACTS" />
+20-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:14:5-72
+20-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:14:22-69
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc1e3f5deb77c88ad3108ff82da219c0\jetified-silicompressor-2.2.3\AndroidManifest.xml:11:5-80
+21-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc1e3f5deb77c88ad3108ff82da219c0\jetified-silicompressor-2.2.3\AndroidManifest.xml:11:22-77
+22    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+22-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc6fcab900be3acea02df6cba23a74c5\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:24:5-68
+22-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc6fcab900be3acea02df6cba23a74c5\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:24:22-65
+23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+23-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+23-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+24    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+24-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:26:5-110
+24-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:26:22-107
+25
+26    <application
+26-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:16:5-76:19
+27        android:allowBackup="true"
+27-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:17:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\2b22d001e8e76e7c475d76f16e73b051\core-1.1.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher_new"
+30-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:18:9-47
+31        android:label="@string/app_name"
+31-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:19:9-41
+32        android:roundIcon="@mipmap/ic_launcher_new_round"
+32-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:20:9-58
+33        android:supportsRtl="true"
+33-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:21:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:22:9-40
+36        <activity android:name="android.example.com.kotlinmessenger.settings.ProfileActivity" >
+36-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:23:9-27:20
+36-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:23:19-59
+37            <meta-data
+37-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:24:13-26:68
+38                android:name="android.support.PARENT_ACTIVITY"
+38-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:25:17-63
+39                android:value=".messages.LatestMessagesActivity" />
+39-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:26:17-65
+40        </activity>
+41        <activity android:name="android.example.com.kotlinmessenger.messages.ChatLogActivity" >
+41-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:28:9-32:20
+41-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:28:19-59
+42            <meta-data
+42-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:24:13-26:68
+43                android:name="android.support.PARENT_ACTIVITY"
+43-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:25:17-63
+44                android:value=".messages.LatestMessagesActivity" />
+44-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:26:17-65
+45        </activity>
+46        <activity android:name="android.example.com.kotlinmessenger.messages.NewChatActivity" >
+46-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:33:9-42:20
+46-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:33:19-59
+47            <meta-data
+47-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:24:13-26:68
+48                android:name="android.support.PARENT_ACTIVITY"
+48-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:25:17-63
+49                android:value=".messages.LatestMessagesActivity" />
+49-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:26:17-65
+50
+51            <intent-filter>
+51-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:37:13-41:29
+52                <action android:name="android.intent.action.SEND" />
+52-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:38:17-69
+52-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:38:25-66
+53
+54                <category android:name="android.intent.category.DEFAULT" />
+54-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:39:17-76
+54-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:39:27-73
+55
+56                <data android:mimeType="text/*" />
+56-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:40:17-51
+56-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:40:23-48
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:43:9-45:75
+60            android:name="android.example.com.kotlinmessenger.settings.AboutAppActivity"
+60-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:44:13-54
+61            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+61-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:45:13-72
+62        <activity android:name="android.example.com.kotlinmessenger.messages.LatestMessagesActivity" />
+62-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:46:9-69
+62-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:46:19-66
+63        <activity
+63-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:47:9-55:20
+64            android:name="android.example.com.kotlinmessenger.startup.SplashActivity"
+64-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:48:13-51
+65            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+65-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:49:13-72
+66            <intent-filter>
+66-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:50:13-54:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:51:17-69
+67-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:51:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:53:17-77
+69-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:53:27-74
+70            </intent-filter>
+71        </activity>
+72        <activity android:name="android.example.com.kotlinmessenger.startup.SignInActivity" />
+72-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:56:9-60
+72-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:56:19-57
+73        <activity android:name="android.example.com.kotlinmessenger.startup.RegisterActivity" >
+73-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:57:9-61:20
+73-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:57:19-59
+74            <meta-data
+74-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:24:13-26:68
+75                android:name="android.support.PARENT_ACTIVITY"
+75-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:25:17-63
+76                android:value=".startup.SignInActivity" />
+76-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:26:17-65
+77        </activity>
+78
+79        <provider
+79-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:63:9-71:20
+80            android:name="androidx.core.content.FileProvider"
+80-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:64:13-62
+81            android:authorities="android.example.com.kotlinmessenger.fileprovider"
+81-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:65:13-83
+82            android:exported="false"
+82-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:66:13-37
+83            android:grantUriPermissions="true" >
+83-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:67:13-47
+84            <meta-data
+84-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:68:13-70:54
+85                android:name="android.support.FILE_PROVIDER_PATHS"
+85-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:69:17-67
+86                android:resource="@xml/file_paths" />
+86-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:70:17-51
+87        </provider>
+88
+89        <meta-data
+89-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:73:9-75:57
+90            android:name="preloaded_fonts"
+90-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:74:13-43
+91            android:resource="@array/preloaded_fonts" />
+91-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:75:13-54
+92
+93        <service
+93-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\de9e3b6141518e60d8f32eb52de8f95e\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:12:9-18:19
+94            android:name="com.google.firebase.components.ComponentDiscoveryService"
+94-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\de9e3b6141518e60d8f32eb52de8f95e\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:13:13-84
+95            android:directBootAware="true"
+95-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f62958d3815e0db12c8d541fff90ab0d\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+96            android:exported="false" >
+96-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\de9e3b6141518e60d8f32eb52de8f95e\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:14:13-37
 97            <meta-data
-97-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\c4306fd4be63e3e030baafd1b27f3c6d\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:30:13-32:85
-98                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-98-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\c4306fd4be63e3e030baafd1b27f3c6d\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:31:17-139
+97-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\de9e3b6141518e60d8f32eb52de8f95e\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:15:13-17:85
+98                android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar"
+98-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\de9e3b6141518e60d8f32eb52de8f95e\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:16:17-122
 99                android:value="com.google.firebase.components.ComponentRegistrar" />
-99-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\c4306fd4be63e3e030baafd1b27f3c6d\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:32:17-82
+99-->[com.google.firebase:firebase-storage-ktx:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\de9e3b6141518e60d8f32eb52de8f95e\jetified-firebase-storage-ktx-19.1.1\AndroidManifest.xml:17:17-82
 100            <meta-data
-100-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
-101                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-101-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+100-->[com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\18494ae756d30eb57516ec48a55514b9\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:15:13-17:85
+101                android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar"
+101-->[com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\18494ae756d30eb57516ec48a55514b9\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:16:17-124
 102                android:value="com.google.firebase.components.ComponentRegistrar" />
-102-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
-103        </service>
-104
-105        <activity
-105-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\54c5590325bb4dc32b8e898e1cb634e9\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
-106            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-106-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\54c5590325bb4dc32b8e898e1cb634e9\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
-107            android:exported="false"
-107-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\54c5590325bb4dc32b8e898e1cb634e9\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
-108            android:label=""
-108-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\54c5590325bb4dc32b8e898e1cb634e9\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
-109            android:theme="@style/EasyPermissions.Transparent" />
-109-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\54c5590325bb4dc32b8e898e1cb634e9\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
-110        <activity
-110-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
-111            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
-111-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
-112            android:excludeFromRecents="true"
-112-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
-113            android:exported="true"
-113-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
-114            android:launchMode="singleTask"
-114-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
-115            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
-115-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
-116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-116-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\a7977079df23e8985ead39ed03ec7eaf\jetified-firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
-117
-118        <provider
-118-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:18:9-26:20
-119            android:name="com.iceteck.silicompressorr.provider.GenericFileProvider"
-119-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:19:13-84
-120            android:authorities="android.example.com.kotlinmessenger.iceteck.silicompressor.provider"
-120-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:20:13-83
-121            android:exported="false"
-121-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:21:13-37
-122            android:grantUriPermissions="true" >
-122-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\29bb89ea8ed9ac29c9f18ef1e1aca92b\jetified-silicompressor-2.2.3\AndroidManifest.xml:22:13-47
-123            <meta-data
-123-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:54:13-56:54
-124                android:name="android.support.FILE_PROVIDER_PATHS"
-124-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:55:17-67
-125                android:resource="@xml/provider_paths" />
-125-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:56:17-51
-126        </provider>
-127
-128        <receiver
-128-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
-129            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-129-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
-130            android:exported="true"
-130-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
-131            android:permission="com.google.android.c2dm.permission.SEND" >
-131-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
-132            <intent-filter>
-132-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
-133                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-133-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
-133-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\d155423451c79f8da7dd57eb57506cd2\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
-134            </intent-filter>
-135        </receiver>
-136
-137        <activity
-137-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\2c5d59eee2bb3a3b7e2e766912ee3f0f\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
-138            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-138-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\2c5d59eee2bb3a3b7e2e766912ee3f0f\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+102-->[com.google.firebase:firebase-database-ktx:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\18494ae756d30eb57516ec48a55514b9\jetified-firebase-database-ktx-19.3.1\AndroidManifest.xml:17:17-82
+103            <meta-data
+103-->[com.google.firebase:firebase-common-ktx:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\075669d88f046ada2120ac044980f25f\jetified-firebase-common-ktx-19.3.0\AndroidManifest.xml:15:13-17:85
+104                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+104-->[com.google.firebase:firebase-common-ktx:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\075669d88f046ada2120ac044980f25f\jetified-firebase-common-ktx-19.3.0\AndroidManifest.xml:16:17-113
+105                android:value="com.google.firebase.components.ComponentRegistrar" />
+105-->[com.google.firebase:firebase-common-ktx:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\075669d88f046ada2120ac044980f25f\jetified-firebase-common-ktx-19.3.0\AndroidManifest.xml:17:17-82
+106            <meta-data
+106-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:36:13-38:85
+107                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+107-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:37:17-109
+108                android:value="com.google.firebase.components.ComponentRegistrar" />
+108-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:38:17-82
+109            <meta-data
+109-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\40c1f9c81649ac37ba56c58c6b0c5957\jetified-firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+110                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+110-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\40c1f9c81649ac37ba56c58c6b0c5957\jetified-firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+111                android:value="com.google.firebase.components.ComponentRegistrar" />
+111-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\40c1f9c81649ac37ba56c58c6b0c5957\jetified-firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+112            <meta-data
+112-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7f209e794c8ccf316dc31f3d4c308bdb\jetified-firebase-database-19.3.1\AndroidManifest.xml:32:13-34:85
+113                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+113-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7f209e794c8ccf316dc31f3d4c308bdb\jetified-firebase-database-19.3.1\AndroidManifest.xml:33:17-109
+114                android:value="com.google.firebase.components.ComponentRegistrar" />
+114-->[com.google.firebase:firebase-database:19.3.1] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7f209e794c8ccf316dc31f3d4c308bdb\jetified-firebase-database-19.3.1\AndroidManifest.xml:34:17-82
+115            <meta-data
+115-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc6fcab900be3acea02df6cba23a74c5\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:30:13-32:85
+116                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+116-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc6fcab900be3acea02df6cba23a74c5\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:31:17-139
+117                android:value="com.google.firebase.components.ComponentRegistrar" />
+117-->[com.google.android.gms:play-services-measurement-api:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc6fcab900be3acea02df6cba23a74c5\jetified-play-services-measurement-api-17.2.2\AndroidManifest.xml:32:17-82
+118            <meta-data
+118-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+119                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+119-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+120                android:value="com.google.firebase.components.ComponentRegistrar" />
+120-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+121        </service>
+122
+123        <activity
+123-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\6a93cc345e556fe3e5dfa614eea0b0fd\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+124            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+124-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\6a93cc345e556fe3e5dfa614eea0b0fd\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+125            android:exported="false"
+125-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\6a93cc345e556fe3e5dfa614eea0b0fd\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+126            android:label=""
+126-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\6a93cc345e556fe3e5dfa614eea0b0fd\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+127            android:theme="@style/EasyPermissions.Transparent" />
+127-->[pub.devrel:easypermissions:3.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\6a93cc345e556fe3e5dfa614eea0b0fd\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+128        <activity
+128-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:24:9-31:50
+129            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+129-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:25:13-85
+130            android:excludeFromRecents="true"
+130-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:26:13-46
+131            android:exported="true"
+131-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:27:13-36
+132            android:launchMode="singleTask"
+132-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:28:13-44
+133            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+133-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:29:13-102
+134            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+134-->[com.google.firebase:firebase-auth:19.2.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\e5eaab79317479142f7b9f7b06b446d1\jetified-firebase-auth-19.2.0\AndroidManifest.xml:30:13-72
+135
+136        <provider
+136-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc1e3f5deb77c88ad3108ff82da219c0\jetified-silicompressor-2.2.3\AndroidManifest.xml:18:9-26:20
+137            android:name="com.iceteck.silicompressorr.provider.GenericFileProvider"
+137-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc1e3f5deb77c88ad3108ff82da219c0\jetified-silicompressor-2.2.3\AndroidManifest.xml:19:13-84
+138            android:authorities="android.example.com.kotlinmessenger.iceteck.silicompressor.provider"
+138-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc1e3f5deb77c88ad3108ff82da219c0\jetified-silicompressor-2.2.3\AndroidManifest.xml:20:13-83
 139            android:exported="false"
-139-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\2c5d59eee2bb3a3b7e2e766912ee3f0f\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
-140            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-140-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\2c5d59eee2bb3a3b7e2e766912ee3f0f\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
-141
-142        <receiver
-142-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:29:9-33:20
-143            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-143-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:30:13-85
-144            android:enabled="true"
-144-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:31:13-35
-145            android:exported="false" >
-145-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:32:13-37
-146        </receiver>
-147        <receiver
-147-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:34:9-42:20
-148            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-148-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:35:13-100
-149            android:enabled="true"
-149-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:36:13-35
-150            android:exported="true"
-150-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:37:13-36
-151            android:permission="android.permission.INSTALL_PACKAGES" >
-151-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:38:13-69
-152            <intent-filter>
-152-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:39:13-41:29
-153                <action android:name="com.android.vending.INSTALL_REFERRER" />
-153-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:40:17-79
-153-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:40:25-76
-154            </intent-filter>
-155        </receiver>
-156
-157        <service
-157-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:44:9-47:40
-158            android:name="com.google.android.gms.measurement.AppMeasurementService"
-158-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:45:13-84
-159            android:enabled="true"
-159-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:46:13-35
-160            android:exported="false" />
-160-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:47:13-37
-161        <service
-161-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:48:9-52:72
-162            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-162-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:49:13-87
-163            android:enabled="true"
-163-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:50:13-35
-164            android:exported="false"
-164-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:51:13-37
-165            android:permission="android.permission.BIND_JOB_SERVICE" />
-165-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\72b6cc6b7cce52e5d9110e055d044f0e\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:52:13-69
-166
-167        <provider
-167-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\482746bb9f6dd605e10e5fd384c49a9d\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
-168            android:name="com.google.firebase.provider.FirebaseInitProvider"
-168-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\482746bb9f6dd605e10e5fd384c49a9d\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
-169            android:authorities="android.example.com.kotlinmessenger.firebaseinitprovider"
-169-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\482746bb9f6dd605e10e5fd384c49a9d\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
-170            android:exported="false"
-170-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\482746bb9f6dd605e10e5fd384c49a9d\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
-171            android:initOrder="100" />
-171-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\482746bb9f6dd605e10e5fd384c49a9d\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
-172
-173        <meta-data
-173-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\95e18d810755c8f1f25d0bd567217132\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-174            android:name="com.google.android.gms.version"
-174-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\95e18d810755c8f1f25d0bd567217132\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-175            android:value="@integer/google_play_services_version" />
-175-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\95e18d810755c8f1f25d0bd567217132\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-176    </application>
-177
-178</manifest>
+139-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc1e3f5deb77c88ad3108ff82da219c0\jetified-silicompressor-2.2.3\AndroidManifest.xml:21:13-37
+140            android:grantUriPermissions="true" >
+140-->[com.iceteck.silicompressorr:silicompressor:2.2.3] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\bc1e3f5deb77c88ad3108ff82da219c0\jetified-silicompressor-2.2.3\AndroidManifest.xml:22:13-47
+141            <meta-data
+141-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:68:13-70:54
+142                android:name="android.support.FILE_PROVIDER_PATHS"
+142-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:69:17-67
+143                android:resource="@xml/provider_paths" />
+143-->C:\Users\Clinton\AndroidStudioProjects\GreenMessenger\app\src\main\AndroidManifest.xml:70:17-51
+144        </provider>
+145
+146        <receiver
+146-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+147            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+147-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+148            android:exported="true"
+148-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+149            android:permission="com.google.android.c2dm.permission.SEND" >
+149-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+150            <intent-filter>
+150-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+151                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+151-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+151-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\7cba53f8d68b717d09d53ec6bd340c0a\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+152            </intent-filter>
+153        </receiver>
+154
+155        <activity
+155-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\b0c37e61d9d38394f18437a76e8b5b94\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+156            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+156-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\b0c37e61d9d38394f18437a76e8b5b94\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+157            android:exported="false"
+157-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\b0c37e61d9d38394f18437a76e8b5b94\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+158            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+158-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\b0c37e61d9d38394f18437a76e8b5b94\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+159
+160        <receiver
+160-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:29:9-33:20
+161            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+161-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:30:13-85
+162            android:enabled="true"
+162-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:31:13-35
+163            android:exported="false" >
+163-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:32:13-37
+164        </receiver>
+165        <receiver
+165-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:34:9-42:20
+166            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+166-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:35:13-100
+167            android:enabled="true"
+167-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:36:13-35
+168            android:exported="true"
+168-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:37:13-36
+169            android:permission="android.permission.INSTALL_PACKAGES" >
+169-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:38:13-69
+170            <intent-filter>
+170-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:39:13-41:29
+171                <action android:name="com.android.vending.INSTALL_REFERRER" />
+171-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:40:17-79
+171-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:40:25-76
+172            </intent-filter>
+173        </receiver>
+174
+175        <service
+175-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:44:9-47:40
+176            android:name="com.google.android.gms.measurement.AppMeasurementService"
+176-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:45:13-84
+177            android:enabled="true"
+177-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:46:13-35
+178            android:exported="false" />
+178-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:47:13-37
+179        <service
+179-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:48:9-52:72
+180            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+180-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:49:13-87
+181            android:enabled="true"
+181-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:50:13-35
+182            android:exported="false"
+182-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:51:13-37
+183            android:permission="android.permission.BIND_JOB_SERVICE" />
+183-->[com.google.android.gms:play-services-measurement:17.2.2] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\96711194446900030c9a1ff26a10566c\jetified-play-services-measurement-17.2.2\AndroidManifest.xml:52:13-69
+184
+185        <provider
+185-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f62958d3815e0db12c8d541fff90ab0d\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+186            android:name="com.google.firebase.provider.FirebaseInitProvider"
+186-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f62958d3815e0db12c8d541fff90ab0d\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+187            android:authorities="android.example.com.kotlinmessenger.firebaseinitprovider"
+187-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f62958d3815e0db12c8d541fff90ab0d\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+188            android:exported="false"
+188-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f62958d3815e0db12c8d541fff90ab0d\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+189            android:initOrder="100" />
+189-->[com.google.firebase:firebase-common:19.3.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\f62958d3815e0db12c8d541fff90ab0d\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+190
+191        <meta-data
+191-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\3c464c40a8f1810f43a8bdce2885c40a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+192            android:name="com.google.android.gms.version"
+192-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\3c464c40a8f1810f43a8bdce2885c40a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+193            android:value="@integer/google_play_services_version" />
+193-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Clinton\.gradle\caches\transforms-2\files-2.1\3c464c40a8f1810f43a8bdce2885c40a\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+194    </application>
+195
+196</manifest>

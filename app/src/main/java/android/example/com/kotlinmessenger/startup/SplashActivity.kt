@@ -16,11 +16,11 @@ class SplashActivity : AppCompatActivity() {
         //makes splash screen appear on full screen removing notification bar
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
 
-        //used to display splash screen for 2 seconds then go to Sign in Activity
+        //used to display splash screen for 1 seconds then go to Sign in Activity
         Handler().postDelayed({
             startActivity(Intent(this, SignInActivity::class.java))
             finish()
-        }, 2000)
+        }, 1000)
 
     }
 }

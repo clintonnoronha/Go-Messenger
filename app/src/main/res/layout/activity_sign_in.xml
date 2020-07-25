@@ -7,37 +7,59 @@
     android:background="@color/colorPrimary"
     tools:context=".startup.RegisterActivity">
 
-    <RelativeLayout
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true">
+        android:theme="@style/AppTheme.AppBarOverLay">
 
-        <ImageView
-            android:id="@+id/imgMessenger"
-            android:layout_width="120dp"
-            android:layout_height="100dp"
-            android:layout_centerHorizontal="true"
-            android:src="@drawable/logo"/>
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverLay"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgMessenger"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"/>
 
             <EditText
                 android:id="@+id/etEmail_sign_in"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_below="@+id/imgMessenger"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="40dp"
                 android:background="@drawable/circular_design"
                 android:drawableStart="@drawable/ic_email"
                 android:drawablePadding="8dp"
-                android:hint="Email"
-                android:textSize="16sp"
-                android:inputType="textEmailAddress"
                 android:ems="10"
+                android:hint="Email"
+                android:textColorHint="@color/colorGrey"
+                android:inputType="textEmailAddress"
                 android:maxLines="1"
                 android:paddingStart="10dp"
                 android:paddingEnd="10dp"
                 android:textColor="@color/colorBlack"
-                android:layout_marginTop="50dp"
-                android:layout_marginStart="40dp"
-                android:layout_marginEnd="40dp"/>
+                android:textSize="16sp" />
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/txtField1"
@@ -45,7 +67,8 @@
                 android:layout_height="40dp"
                 android:layout_below="@+id/etEmail_sign_in"
                 app:hintEnabled="false"
-                app:passwordToggleEnabled="true"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/colorGrey"
                 android:layout_marginTop="30dp"
                 android:layout_marginStart="40dp"
                 android:layout_marginEnd="40dp">
@@ -58,6 +81,7 @@
                     android:drawableStart="@drawable/ic_password"
                     android:drawablePadding="8dp"
                     android:hint="Password"
+                    android:textColorHint="@color/colorGrey"
                     android:textSize="16sp"
                     android:inputType="textPassword"
                     android:ems="10"
@@ -98,7 +122,9 @@
                 android:clickable="true"
                 android:focusable="true" />
 
-    </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
 
     <RelativeLayout
         android:id="@+id/progressLayout"

@@ -1,13 +1,16 @@
 package android.example.com.kotlinmessenger.startup
 
+import android.content.Context
 import android.content.Intent
 import android.example.com.kotlinmessenger.R
 import android.example.com.kotlinmessenger.messages.LatestMessagesActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import com.google.firebase.auth.FirebaseAuth
 
 class SignInActivity : AppCompatActivity() {
@@ -18,6 +21,7 @@ class SignInActivity : AppCompatActivity() {
     lateinit var btnSignIn: Button
     lateinit var progressLayout: RelativeLayout
     lateinit var progressBar: ProgressBar
+    lateinit var toolbar: Toolbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,8 +37,11 @@ class SignInActivity : AppCompatActivity() {
         btnSignIn = findViewById(R.id.btnSignIn)
         progressLayout = findViewById(R.id.progressLayout)
         progressBar = findViewById(R.id.progressBar)
+        toolbar = findViewById(R.id.toolbarSignIn)
 
         progressLayout.visibility = View.GONE
+
+        setUpToolbar()
 
         //go to register activity if user doesn't have an account
         txtCreateAccount.setOnClickListener {
@@ -44,9 +51,20 @@ class SignInActivity : AppCompatActivity() {
         }
 
         btnSignIn.setOnClickListener {
+            //Hide Keyboard
+            val ref = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            ref.hideSoftInputFromWindow(
+                btnSignIn.windowToken,
+                InputMethodManager.RESULT_UNCHANGED_SHOWN
+            )
             performSignIn()
         }
 
+    }
+
+    private fun setUpToolbar() {
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = getString(R.string.app_name)
     }
 
     private fun userLogInVerification() {

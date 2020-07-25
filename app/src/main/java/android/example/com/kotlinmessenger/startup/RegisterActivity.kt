@@ -3,6 +3,7 @@ package android.example.com.kotlinmessenger.startup
 import android.Manifest
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
 import android.example.com.kotlinmessenger.R
@@ -14,8 +15,10 @@ import android.os.Environment
 import android.provider.MediaStore
 import android.util.Log
 import android.view.View
+import android.view.inputmethod.InputMethodManager
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.core.content.FileProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
@@ -44,6 +47,7 @@ class RegisterActivity : AppCompatActivity(),
     var selectedPhotoUri: Uri? = null
     lateinit var progressLayout: RelativeLayout
     lateinit var progressBar: ProgressBar
+    lateinit var toolbar: Toolbar
     private val TAG = "Register"
     private val STORAGE_PREMISSION_CODE = 101
     private val CAMERA_PREMISSION_CODE = 102
@@ -66,8 +70,11 @@ class RegisterActivity : AppCompatActivity(),
         imgSelectPhoto = findViewById(R.id.imgSelectPhoto)
         progressLayout = findViewById(R.id.progressLayout2)
         progressBar = findViewById(R.id.progressBar2)
+        toolbar = findViewById(R.id.toolbarRegister)
 
         progressLayout.visibility = View.GONE
+
+        setUpToolbar()
 
         //Go back to Sign in if user has Account
         txtHaveAccount.setOnClickListener {
@@ -83,9 +90,22 @@ class RegisterActivity : AppCompatActivity(),
 
         //Registration of new User on clicking the REGISTER Button
         btnRegister.setOnClickListener {
+            //Hide keyboard
+            val ref = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            ref.hideSoftInputFromWindow(
+                btnRegister.windowToken,
+                InputMethodManager.RESULT_UNCHANGED_SHOWN
+            )
             performRegistration()
         }
 
+    }
+
+    private fun setUpToolbar() {
+        setSupportActionBar(toolbar)
+        supportActionBar?.title = getString(R.string.app_name)
+        supportActionBar?.setHomeButtonEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
     private fun selectPhoto() {
@@ -201,11 +221,6 @@ class RegisterActivity : AppCompatActivity(),
 
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        //overridePendingTransition(0, 0)
-    }
-
     private fun performRegistration() {
         val email = etEmail.text.toString()
         val password = etPassword.text.toString()
@@ -257,8 +272,9 @@ class RegisterActivity : AppCompatActivity(),
             return
         }
 
-        val filename = UUID.randomUUID().toString()
-        val ref = FirebaseStorage.getInstance().getReference("/images/$filename")
+        val filename = "profile_image"
+        val  uid = FirebaseAuth.getInstance().uid
+        val ref = FirebaseStorage.getInstance().getReference("/images/$uid/$filename")
 
         //upload image to firebase storage
         ref.putFile(selectedPhotoUri!!)

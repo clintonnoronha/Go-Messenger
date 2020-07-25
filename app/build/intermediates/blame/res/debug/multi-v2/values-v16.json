@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Clinton\\AndroidStudioProjects\\GreenMessenger\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Clinton\\.gradle\\caches\\transforms-2\\files-2.1\\4dec79f877fb28a042d1f27c4b32bf3a\\core-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Clinton\\.gradle\\caches\\transforms-2\\files-2.1\\2b22d001e8e76e7c475d76f16e73b051\\core-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Clinton\\.gradle\\caches\\transforms-2\\files-2.1\\347aa7859370343266dc1e5f2fb9c697\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\Clinton\\.gradle\\caches\\transforms-2\\files-2.1\\d430663ab485d1357a70bb131c106210\\appcompat-1.1.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

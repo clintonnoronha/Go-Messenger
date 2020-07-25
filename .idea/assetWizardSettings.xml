@@ -24,7 +24,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\Clinton\AppData\Local\Temp\baseline_message_24.xml" />
+                                                <entry key="imagePath" value="C:\Users\Clinton\AppData\Local\Temp\baseline_search_24.xml" />
                                                 <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
@@ -36,7 +36,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/message/baseline_message_24.xml" />
+                                                <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/search/baseline_search_24.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -82,8 +82,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="imageAsset" value="C:\Users\Clinton\AndroidStudioProjects\KotlinMessenger\app\src\main\res\drawable-xxhdpi\logo.png" />
-                                      <entry key="outputName" value="ic_new_message" />
-                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="outputName" value="ic_action_search" />
+                                      <entry key="theme" value="HOLO_DARK" />
                                       <entry key="themeColor" value="76ff03" />
                                     </map>
                                   </option>
@@ -345,7 +345,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/send/baseline_send_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialiconsround/wifi_off/round_wifi_off_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -356,7 +356,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_send_message" />
+                            <entry key="outputName" value="ic_no_wifi_off_24" />
                             <entry key="sourceFile" value="C:\Users\Clinton\AndroidStudioProjects\GreenMessenger" />
                           </map>
                         </option>
