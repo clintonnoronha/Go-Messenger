@@ -345,7 +345,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialiconsround/wifi_off/round_wifi_off_24.xml" />
+                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/insert_drive_file/baseline_insert_drive_file_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -356,7 +356,7 @@
                         <option name="values">
                           <map>
                             <entry key="color" value="ffffff" />
-                            <entry key="outputName" value="ic_no_wifi_off_24" />
+                            <entry key="outputName" value="ic_file" />
                             <entry key="sourceFile" value="C:\Users\Clinton\AndroidStudioProjects\GreenMessenger" />
                           </map>
                         </option>

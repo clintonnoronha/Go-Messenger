@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@android:color/transparent">
 
     <TextView
@@ -27,5 +27,81 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/rlMedia"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/outgoing_speech_bubble"
+        android:paddingStart="10dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_media"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/txtMediaName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Image.pdf"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgMedia"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:maxWidth="240dp"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlFiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginStart="4dp"
+        android:maxWidth="300dp"
+        android:visibility="gone"
+        android:background="@drawable/outgoing_speech_bubble"
+        android:paddingStart="10dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgFiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/txtFileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="240dp"
+            tools:text="Image.pdf"
+            android:layout_marginStart="6dp"
+            android:layout_toEndOf="@+id/imgFiles"
+            android:singleLine="true"
+            android:ellipsize="middle"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

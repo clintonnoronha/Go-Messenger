@@ -4,6 +4,7 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
 import android.example.com.kotlinmessenger.R
 import android.example.com.kotlinmessenger.model.User
@@ -13,12 +14,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.View
 import android.view.WindowManager
-import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.widget.Toolbar
 import androidx.core.content.FileProvider
 import com.bumptech.glide.Glide
@@ -27,6 +28,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 import com.google.firebase.storage.FirebaseStorage
+import com.theartofdev.edmodo.cropper.CropImage
+import com.theartofdev.edmodo.cropper.CropImageView
 import de.hdodenhof.circleimageview.CircleImageView
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
@@ -40,19 +43,22 @@ class ProfileActivity : AppCompatActivity(),
     EasyPermissions.PermissionCallbacks,
     EasyPermissions.RationaleCallbacks{
 
-    var currentPath: String? = null
-    var selectedPhotoUri: Uri? = null
+    private var cameraFile: File? = null
+    private var currentPath: String? = null
+    private var selectedPhotoUri: Uri? = null
     lateinit var toolbar: Toolbar
     lateinit var imgProfilePhoto: CircleImageView
     lateinit var txtProfileName: TextView
     lateinit var txtProfileEmail: TextView
     lateinit var txtProfileAbout: TextView
-    lateinit var txtProfilePhone: TextView
     lateinit var imgBtnEditName: ImageButton
     lateinit var imgBtnEditAbout: ImageButton
-    lateinit var imgBtnEditPhone: ImageButton
     lateinit var fabProfileCamera: FloatingActionButton
+    lateinit var llEditName: LinearLayout
+    lateinit var llEditAbout: LinearLayout
     private var bottomSheetDialog: BottomSheetDialog? = null
+    private var bottomSheetEditName: BottomSheetDialog? = null
+    private var bottomSheetEditAbout: BottomSheetDialog? = null
     private val STORAGE_PREMISSION_CODE = 101
     private val CAMERA_PREMISSION_CODE = 102
     private val OPEN_STORAGE = 103
@@ -73,18 +79,27 @@ class ProfileActivity : AppCompatActivity(),
         txtProfileName = findViewById(R.id.txtProfileName)
         txtProfileEmail = findViewById(R.id.txtProfileEmail)
         txtProfileAbout = findViewById(R.id.txtProfileAbout)
-        txtProfilePhone = findViewById(R.id.txtProfileNumber)
         imgBtnEditName = findViewById(R.id.imgBtnEditName)
         imgBtnEditAbout = findViewById(R.id.imgBtnEditAbout)
-        imgBtnEditPhone = findViewById(R.id.imgBtnEditPhone)
         fabProfileCamera = findViewById(R.id.fabSelectPhoto)
+        llEditName = findViewById(R.id.llEditName)
+        llEditAbout = findViewById(R.id.llEditAbout)
 
         setUpToolbar()
 
         loadUserProfile()
 
-        onFabCameraClick()
+        fabProfileCamera.setOnClickListener {
+            showBottomDialogPick()
+        }
 
+        llEditName.setOnClickListener {
+            showBottomDialogEditName()
+        }
+
+        llEditAbout.setOnClickListener {
+            showBottomDialogEditAbout()
+        }
     }
 
     private fun setUpToolbar() {
@@ -92,12 +107,6 @@ class ProfileActivity : AppCompatActivity(),
         supportActionBar?.title = "Profile"
         supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-    }
-
-    private fun onFabCameraClick() {
-        fabProfileCamera.setOnClickListener {
-            showBottomDialogPick()
-        }
     }
 
     private fun showBottomDialogPick() {
@@ -132,6 +141,110 @@ class ProfileActivity : AppCompatActivity(),
         bottomSheetDialog?.show()
     }
 
+    private fun showBottomDialogEditName() {
+        @SuppressLint("InflateParams") val view = layoutInflater.inflate(R.layout.bottom_sheet_edit_name, null)
+
+        (view.findViewById(R.id.etChangeName) as EditText).addTextChangedListener(object : TextWatcher {
+            // display the number of characters that can be typed
+            override fun afterTextChanged(s: Editable?) {
+                val currentText = s.toString()
+                val currentLength = 25 - currentText.length
+                if (currentLength != 25) {
+                    (view.findViewById(R.id.txtCharacterCount) as TextView).text = currentLength.toString()
+                } else {
+                    (view.findViewById(R.id.txtCharacterCount) as TextView).text = ""
+                }
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) { }
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { }
+        })
+
+        (view.findViewById(R.id.btnSave) as View).setOnClickListener {
+            val text = (view.findViewById(R.id.etChangeName) as EditText).text.toString().trim()
+            if (text.isNotBlank()) {
+                updateUserName(text)
+                bottomSheetEditName?.dismiss()
+            } else {
+                Toast.makeText(
+                    this,
+                    "Name can't be blank!",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
+        (view.findViewById(R.id.btnCancel) as View).setOnClickListener {
+            (view.findViewById(R.id.etChangeName) as EditText).text.clear()
+            bottomSheetEditName?.dismiss()
+        }
+
+        bottomSheetEditName = BottomSheetDialog(this)
+        bottomSheetEditName?.setContentView(view)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Objects.requireNonNull(bottomSheetEditName?.window?.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS))
+        }
+
+        bottomSheetEditName?.setOnDismissListener {
+            bottomSheetEditName = null
+        }
+
+        bottomSheetEditName?.show()
+    }
+
+    private fun showBottomDialogEditAbout() {
+        @SuppressLint("InflateParams") val view = layoutInflater.inflate(R.layout.bottom_sheet_edit_about, null)
+
+        (view.findViewById(R.id.etChangeAbout) as EditText).addTextChangedListener(object : TextWatcher {
+            // display the number of characters that can be typed
+            override fun afterTextChanged(s: Editable?) {
+                val currentText = s.toString()
+                val currentLength = 139 - currentText.length
+                if (currentLength != 139) {
+                    (view.findViewById(R.id.txtCharacterAboutCount) as TextView).text = currentLength.toString()
+                } else {
+                    (view.findViewById(R.id.txtCharacterAboutCount) as TextView).text = ""
+                }
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) { }
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) { }
+        })
+
+        (view.findViewById(R.id.btnSaveAbout) as View).setOnClickListener {
+            val text = (view.findViewById(R.id.etChangeAbout) as EditText).text.toString().trim()
+            if (text.isNotBlank()) {
+                updateUserAbout(text)
+                bottomSheetEditAbout?.dismiss()
+            } else {
+                Toast.makeText(
+                    this,
+                    "About can't be blank!",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
+
+        (view.findViewById(R.id.btnCancelAbout) as View).setOnClickListener {
+            (view.findViewById(R.id.etChangeAbout) as EditText).text.clear()
+            bottomSheetEditAbout?.dismiss()
+        }
+
+        bottomSheetEditAbout = BottomSheetDialog(this)
+        bottomSheetEditAbout?.setContentView(view)
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            Objects.requireNonNull(bottomSheetEditAbout?.window?.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS))
+        }
+
+        bottomSheetEditAbout?.setOnDismissListener {
+            bottomSheetEditAbout = null
+        }
+
+        bottomSheetEditAbout?.show()
+    }
+
     private fun removeProfilePhoto() {
         val dialog = AlertDialog.Builder(this@ProfileActivity)
         dialog.setTitle("Remove Photo")
@@ -151,8 +264,17 @@ class ProfileActivity : AppCompatActivity(),
                     ).show()
                     //updating photo value as empty in user database
                     val userRef = FirebaseDatabase.getInstance().getReference("/users/$uid")
-                    userRef.child("profileImageUrl").setValue("")
-                    imgProfilePhoto.setImageResource(R.drawable.default_user_image)
+                    userRef.child("profileImageUrl")
+                        .setValue("").addOnSuccessListener {
+                            imgProfilePhoto.setImageResource(R.drawable.default_user_image)
+                        }
+                        .addOnFailureListener {
+                            Toast.makeText(
+                                this,
+                                "Some error occurred! Please try again later.",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                        }
                 }
                 .addOnFailureListener {
                     val uid = FirebaseAuth.getInstance().uid
@@ -186,6 +308,46 @@ class ProfileActivity : AppCompatActivity(),
         dialog.show()
     }
 
+    private fun updateUserName(text: String) {
+        val uid = FirebaseAuth.getInstance().uid
+        val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
+        ref.child("username").setValue(text).addOnSuccessListener {
+            txtProfileName.text = text
+            Toast.makeText(
+                this,
+                "Name updated!!",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+            .addOnFailureListener {
+                Toast.makeText(
+                    this,
+                    "Some error occurred! Please try again later.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+    }
+
+    private fun updateUserAbout(text: String) {
+        val uid = FirebaseAuth.getInstance().uid
+        val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
+        ref.child("about").setValue(text).addOnSuccessListener {
+            txtProfileAbout.text = text
+            Toast.makeText(
+                this,
+                "Updated!!",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+            .addOnFailureListener {
+                Toast.makeText(
+                    this,
+                    "Some error occurred! Please try again later.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+    }
+
     private fun hasStoragePermission(): Boolean {
         return EasyPermissions.hasPermissions(this, *perms)
     }
@@ -193,8 +355,9 @@ class ProfileActivity : AppCompatActivity(),
     private fun storagePermissionRequest() {
         if (hasStoragePermission()) {
             //open gallery to select photo
-            val intent = Intent(Intent.ACTION_GET_CONTENT)
+            val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
+            intent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
             startActivityForResult(intent, OPEN_STORAGE)
         } else {
             EasyPermissions
@@ -227,6 +390,7 @@ class ProfileActivity : AppCompatActivity(),
                         "android.example.com.kotlinmessenger.fileprovider",
                         photoFile)
                     intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
+                    intent.flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
                     startActivityForResult(intent, TAKE_PICTURE)
                 }
             }
@@ -258,8 +422,10 @@ class ProfileActivity : AppCompatActivity(),
             //proceed and check which image was selected...
             try {
                 selectedPhotoUri = data.data
-                //imgProfilePhoto.setImageURI(selectedPhotoUri)
-                uploadImageToFirebaseStorage()
+                CropImage.activity(selectedPhotoUri)
+                    .setGuidelines(CropImageView.Guidelines.ON)
+                    .setAspectRatio(1, 1)
+                    .start(this)
             } catch (e: IOException) {
                 e.printStackTrace()
             }
@@ -268,10 +434,12 @@ class ProfileActivity : AppCompatActivity(),
 
         if (requestCode == TAKE_PICTURE && data != null && resultCode == Activity.RESULT_OK) {
             try {
-                val file = File(currentPath)
-                selectedPhotoUri = Uri.fromFile(file)
-                //imgProfilePhoto.setImageURI(selectedPhotoUri)
-                uploadImageToFirebaseStorage()
+                cameraFile = File(currentPath)
+                selectedPhotoUri = Uri.fromFile(cameraFile)
+                CropImage.activity(selectedPhotoUri)
+                    .setGuidelines(CropImageView.Guidelines.ON)
+                    .setAspectRatio(1, 1)
+                    .start(this)
             } catch (e: IOException) {
                 e.printStackTrace()
             }
@@ -281,12 +449,30 @@ class ProfileActivity : AppCompatActivity(),
             Log.d(TAG, "Returned from application settings")
         }
 
+        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
+            val result = CropImage.getActivityResult(data)
+            if (resultCode == Activity.RESULT_OK){
+                selectedPhotoUri = result.uri
+                uploadImageToFirebaseStorage()
+                if (cameraFile != null) {
+                    cameraFile?.delete()
+                    cameraFile = null
+                }
+            } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
+                val error = result.error
+                Toast.makeText(
+                    this,
+                    "Some error occurred, please try again later.",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
+        }
     }
 
     private fun loadUserProfile() {
-        val userUid = FirebaseAuth.getInstance().uid
+        val uid = FirebaseAuth.getInstance().uid
         val currentUser = FirebaseAuth.getInstance().currentUser
-        val ref = FirebaseDatabase.getInstance().getReference("/users/$userUid")
+        val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
         ref.addListenerForSingleValueEvent(object : ValueEventListener{
             override fun onCancelled(error: DatabaseError) {}
 
@@ -303,7 +489,6 @@ class ProfileActivity : AppCompatActivity(),
                     txtProfileName.text = user.username
                     txtProfileEmail.text = currentUser?.email
                     txtProfileAbout.text = user.about
-                    txtProfilePhone.text = user.phone
                 }
             }
 
@@ -337,7 +522,7 @@ class ProfileActivity : AppCompatActivity(),
                 .addOnFailureListener {
                     Toast.makeText(
                         this,
-                        "Upload Failed. Please try again",
+                        "Upload Failed. Please try again later.",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -419,6 +604,7 @@ class ProfileActivity : AppCompatActivity(),
     override fun onRationaleAccepted(requestCode:Int) {
         Log.d(TAG, "onRationaleAccepted:" + requestCode)
     }
+
     override fun onRationaleDenied(requestCode:Int) {
         Log.d(TAG, "onRationaleDenied:" + requestCode)
     }

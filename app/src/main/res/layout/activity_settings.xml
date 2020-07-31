@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverLay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.AppBarOverLay"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/llDarkTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appbar4"
+        android:orientation="vertical">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Dark Theme"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <Switch
+            android:id="@+id/switchLightDark"
+            android:padding="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="Night Mode"
+            android:textSize="16sp"
+            android:textColor="@color/colorSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llDarkTheme"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deactivate Account"
+            android:textColor="@color/colorText"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deactivate_acc_notice"
+            android:textColor="@color/colorLink"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/llConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm  Password"
+                android:textColor="@color/colorText"
+                android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/circular_design"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="8dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:hint="Password"
+                android:textColorHint="@color/colorGrey"
+                android:textSize="16sp"
+                android:inputType="textPassword"
+                android:ems="10"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/colorBlack"/>
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="end"
+                android:background="@drawable/ripple_effect"
+                android:text="Confirm"
+                android:textColor="@color/colorText"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDeactivateAcc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="end"
+            android:background="@drawable/ripple_effect"
+            android:text="Deactivate"
+            android:textColor="@color/colorText"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/copyRight"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ripple_effect"
+        android:text="Sign Out"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:id="@+id/copyRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="@string/copyright"
+        android:textColor="@color/colorGrey"/>
+
+</RelativeLayout>

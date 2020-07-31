@@ -15,4 +15,5 @@
     <color name="colorMessage">#212121</color>
     <color name="colorMenu">#212121</color>
     <color name="colorBottomDialog">#212121</color>
+    <color name="colorSwitch">#A4A4A4</color>
 </resources>

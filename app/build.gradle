@@ -65,9 +65,6 @@ dependencies {
     //include EasyPermissions support library
     implementation 'pub.devrel:easypermissions:3.0.0'
 
-    //include for compressing images and videos
-    implementation 'com.iceteck.silicompressorr:silicompressor:2.2.3'
-
     //include ArtherHub for cropping and rotating images
-    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
 }

@@ -13,48 +13,116 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp"
-        tools:src="@drawable/default_user_image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/default_user_image" />
 
     <TextView
         android:id="@+id/txtContactNameRecentMessages"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        tools:text="@string/default_name"
+        android:layout_marginTop="16dp"
         android:textColor="@color/colorText"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txtLatestMessage"
         app:layout_constraintStart_toEndOf="@+id/imgContactRecentMessages"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        tools:text="@string/default_name" />
 
     <TextView
         android:id="@+id/txtLatestMessage"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="4dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:ellipsize="end"
-        tools:text="Latest Message"
         android:maxLines="1"
         android:textColor="@color/colorText"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imgContactRecentMessages"
-        app:layout_constraintTop_toBottomOf="@+id/txtContactNameRecentMessages" />
+        tools:text="Latest Message" />
+
+    <RelativeLayout
+        android:id="@+id/rlFilesLatestMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgContactRecentMessages">
+
+        <ImageView
+            android:id="@+id/imgFilesLatestMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_file"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/txtFileLatestMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imgFilesLatestMessage"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            tools:text="Notification.pdf" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMediaLatestMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgContactRecentMessages">
+
+        <ImageView
+            android:id="@+id/imgMediaLatestMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_media"
+            android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/txtMediaLatestMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imgMediaLatestMessage"
+            android:ellipsize="middle"
+            android:singleLine="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorText"
+            android:textSize="16sp"
+            tools:text="music.mp4" />
+
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="0.5dp"
-        android:background="@color/colorGrey"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
+        android:background="@color/colorGrey"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

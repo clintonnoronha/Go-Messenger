@@ -20,12 +20,24 @@
         android:roundIcon="@mipmap/ic_launcher_new_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".startup.ForgotPasswordActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".startup.SignInActivity" />
+        </activity>
+        <activity android:name=".settings.SettingsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".messages.LatestMessagesActivity" />
+        </activity>
         <activity android:name=".settings.ProfileActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".messages.LatestMessagesActivity" />
         </activity>
-        <activity android:name=".messages.ChatLogActivity">
+        <activity
+            android:name=".messages.ChatLogActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".messages.LatestMessagesActivity" />
@@ -34,9 +46,12 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".messages.LatestMessagesActivity" />
+
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
+
                 <category android:name="android.intent.category.DEFAULT" />
+
                 <data android:mimeType="text/*" />
             </intent-filter>
         </activity>
@@ -59,6 +74,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".startup.SignInActivity" />
         </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

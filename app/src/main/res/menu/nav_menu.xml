@@ -14,8 +14,8 @@
         android:title="Profile"/>
 
     <item
-        android:id="@+id/sign_out"
-        android:title="Sign Out" />
+        android:id="@+id/settings"
+        android:title="Settings" />
 
     <item
         android:id="@+id/about_app"

@@ -8,5 +8,8 @@
     <string name="rationale_storage">Allow Go Messenger to access photos, media, and files on you device?</string>
     <string name="copyright">© Go Messenger 2020</string>
     <string name="shared_intent">sharedIntent</string>
+    <string name="theme_mode">themeMode</string>
+    <string name="forgot_password">\'OR\' Forgot password? Click here</string>
+    <string name="deactivate_acc_notice">Note: On deactivating your account, you will no longer be able to access your account in the future. All the user data will be erased. Please consider properly before proceeding.</string>
 
 </resources>

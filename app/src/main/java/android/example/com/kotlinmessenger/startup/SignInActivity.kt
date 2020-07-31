@@ -19,6 +19,7 @@ class SignInActivity : AppCompatActivity() {
     lateinit var etEmailSignIn: EditText
     lateinit var etPasswordSignIn: EditText
     lateinit var btnSignIn: Button
+    lateinit var txtForgotPassword: TextView
     lateinit var progressLayout: RelativeLayout
     lateinit var progressBar: ProgressBar
     lateinit var toolbar: Toolbar
@@ -31,6 +32,7 @@ class SignInActivity : AppCompatActivity() {
         userLogInVerification()
 
         //finding the respective view Ids
+        txtForgotPassword = findViewById(R.id.txtForgotPassword)
         txtCreateAccount = findViewById(R.id.txtStatic)
         etEmailSignIn = findViewById(R.id.etEmail_sign_in)
         etPasswordSignIn = findViewById(R.id.etPassword_sign_in)
@@ -46,6 +48,12 @@ class SignInActivity : AppCompatActivity() {
         //go to register activity if user doesn't have an account
         txtCreateAccount.setOnClickListener {
             val intent = Intent(this@SignInActivity, RegisterActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(0, 0)
+        }
+
+        txtForgotPassword.setOnClickListener {
+            val intent = Intent(this@SignInActivity, ForgotPasswordActivity::class.java)
             startActivity(intent)
             overridePendingTransition(0, 0)
         }

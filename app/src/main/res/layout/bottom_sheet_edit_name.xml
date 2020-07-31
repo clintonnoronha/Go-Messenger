@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="15dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:background="@color/colorBottomDialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your name"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:textSize="15sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp">
+
+        <EditText
+            android:id="@+id/etChangeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:maxLength="25"
+            tools:text="Joe Doe"
+            android:textColor="@color/colorText"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="40dp"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp"
+            android:inputType="textPersonName">
+                <requestFocus/>
+        </EditText>
+
+        <TextView
+            android:id="@+id/txtCharacterCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:layout_alignBaseline="@+id/etChangeName"
+            android:layout_alignParentEnd="true"
+            tools:text="25"
+            android:textColor="@color/colorGrey"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_alignParentStart="true"
+            android:text="CANCEL"
+            android:textColor="@color/colorText"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:layout_alignParentEnd="true"
+            android:text="SAVE"
+            android:textColor="@color/colorText"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

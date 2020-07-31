@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
@@ -29,6 +30,10 @@ class LatestChatAdapter(val context: Context, private val chatArrayList: ArrayLi
         val imgContactRecentMessages: CircleImageView = view.findViewById(R.id.imgContactRecentMessages)
         val txtContactNameRecentMessages: TextView = view.findViewById(R.id.txtContactNameRecentMessages)
         val txtLatestMessage: TextView = view.findViewById(R.id.txtLatestMessage)
+        val rlFilesLatestMessage: RelativeLayout = view.findViewById(R.id.rlFilesLatestMessage)
+        val rlMediaLatestMessage: RelativeLayout = view.findViewById(R.id.rlMediaLatestMessage)
+        val txtFileLatestMessage: TextView = view.findViewById(R.id.txtFileLatestMessage)
+        val txtMediaLatestMessage: TextView = view.findViewById(R.id.txtMediaLatestMessage)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LatestChatViewHolder {
@@ -43,7 +48,23 @@ class LatestChatAdapter(val context: Context, private val chatArrayList: ArrayLi
     override fun onBindViewHolder(holder: LatestChatViewHolder, position: Int) {
         var userObject: User ? = null
         val userLatestChat = chatArrayList[position]
-        holder.txtLatestMessage.text = userLatestChat.text
+        if (userLatestChat.text != "") {
+            holder.txtLatestMessage.visibility = View.VISIBLE
+            holder.rlFilesLatestMessage.visibility = View.GONE
+            holder.rlMediaLatestMessage.visibility = View.GONE
+            holder.txtLatestMessage.text = userLatestChat.text
+        } else if (userLatestChat.fileUrl != "") {
+            holder.txtLatestMessage.visibility = View.GONE
+            holder.rlFilesLatestMessage.visibility = View.VISIBLE
+            holder.rlMediaLatestMessage.visibility = View.GONE
+            holder.txtFileLatestMessage.text = userLatestChat.fileName
+        } else if (userLatestChat.mediaUrl != "") {
+            holder.txtLatestMessage.visibility = View.GONE
+            holder.rlFilesLatestMessage.visibility = View.GONE
+            holder.rlMediaLatestMessage.visibility = View.VISIBLE
+            holder.txtMediaLatestMessage.text = userLatestChat.fileName
+        }
+
 
         val chatPartnerId: String
         chatPartnerId = if (userLatestChat.fromId == FirebaseAuth.getInstance().uid)

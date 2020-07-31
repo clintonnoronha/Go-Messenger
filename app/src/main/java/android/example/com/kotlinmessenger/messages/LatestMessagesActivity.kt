@@ -4,11 +4,13 @@ import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.example.com.kotlinmessenger.R
 import android.example.com.kotlinmessenger.adapter.LatestChatAdapter
 import android.example.com.kotlinmessenger.model.ChatMessages
 import android.example.com.kotlinmessenger.settings.AboutAppActivity
 import android.example.com.kotlinmessenger.settings.ProfileActivity
+import android.example.com.kotlinmessenger.settings.SettingsActivity
 import android.example.com.kotlinmessenger.startup.SignInActivity
 import android.net.*
 import android.os.Build
@@ -19,6 +21,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.RelativeLayout
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import androidx.coordinatorlayout.widget.CoordinatorLayout
@@ -42,11 +45,11 @@ class LatestMessagesActivity : AppCompatActivity() {
     lateinit var rlNoNetwork: RelativeLayout
     lateinit var coordinatorLayout: CoordinatorLayout
     private val TAG = "LatestMessageActivity"
-    private var isConnected: Boolean = false
     private var shortAnimationTime: Int = 0
     private val displayList = ArrayList<ChatMessages>()
     private val tempList = ArrayList<ChatMessages>()
     var adapter: LatestChatAdapter = LatestChatAdapter(this, displayList)
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -57,8 +60,7 @@ class LatestMessagesActivity : AppCompatActivity() {
         latestChatRecycler = findViewById(R.id.latestMessagesRecyclerView)
         rlNoNetwork = findViewById(R.id.rlNoNetwork)
         coordinatorLayout = findViewById(R.id.coordinatorLayout)
-        coordinatorLayout.visibility = View.VISIBLE
-        rlNoNetwork.visibility = View.GONE
+        coordinatorLayout.visibility = View.GONE
         shortAnimationTime = resources.getInteger(android.R.integer.config_shortAnimTime)
 
         isNetworkAvailable()
@@ -86,9 +88,16 @@ class LatestMessagesActivity : AppCompatActivity() {
                         }
                     }
 
-                    override fun onLost(network: Network) {
+                    override fun onUnavailable() {
                         lifecycleScope.launch {
                             Log.i(TAG, "Network connection not found")
+                            rlNoNetwork.visibility = View.VISIBLE
+                        }
+                    }
+
+                    override fun onLost(network: Network) {
+                        lifecycleScope.launch {
+                            Log.i(TAG, "Network connection lost")
                             Log.i(TAG, "animateInNoNetworkLayout()")
                             animateInNoNetworkLayout()
                         }
@@ -140,6 +149,7 @@ class LatestMessagesActivity : AppCompatActivity() {
             .setListener(object : AnimatorListenerAdapter() {
                 override fun onAnimationEnd(animation: Animator?) {
                     rlNoNetwork.visibility = View.GONE
+                    //progressLayout.visibility = View.GONE
                 }
             })
     }
@@ -218,12 +228,9 @@ class LatestMessagesActivity : AppCompatActivity() {
                 val intent = Intent(this, ProfileActivity::class.java)
                 startActivity(intent)
             }
-            R.id.sign_out -> {
-                //sign user out
-                FirebaseAuth.getInstance().signOut()
-                val intent = Intent(this, SignInActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
-                startActivity(intent)
+            R.id.settings -> {
+                val settingsIntent = Intent(this, SettingsActivity::class.java)
+                startActivity(settingsIntent)
             }
             R.id.about_app -> {
                 //Display App Info

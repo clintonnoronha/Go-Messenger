@@ -15,4 +15,5 @@
     <color name="colorMessage">#FFFFFF</color>
     <color name="colorMenu">#FFFFFF</color>
     <color name="colorBottomDialog">#FFFFFF</color>
+    <color name="colorSwitch">#212121</color>
 </resources>

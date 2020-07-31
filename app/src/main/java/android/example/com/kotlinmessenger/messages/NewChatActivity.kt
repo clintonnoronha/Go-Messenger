@@ -6,11 +6,13 @@ import android.content.SharedPreferences
 import android.example.com.kotlinmessenger.R
 import android.example.com.kotlinmessenger.model.User
 import android.example.com.kotlinmessenger.adapter.UserItemAdapter
+import android.example.com.kotlinmessenger.startup.SignInActivity
+import android.example.com.kotlinmessenger.startup.SplashActivity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import androidx.recyclerview.widget.RecyclerView
@@ -60,9 +62,28 @@ class NewChatActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
+    private fun checkIfUserSignIn(): Boolean {
+        val user = FirebaseAuth.getInstance().currentUser
+        return user != null
+    }
+
     private fun handleSentText(intent: Intent) {
         intent.getStringExtra(Intent.EXTRA_TEXT)?.let {
-            sharedPreferences.edit().putString(UserItemAdapter.INTENT_ACTION_SEND, it).apply()
+            if (checkIfUserSignIn()) {
+                //if user is signed in then save incoming text and send it to any user's chat log
+                sharedPreferences.edit().putString(UserItemAdapter.INTENT_ACTION_SEND, it).apply()
+            }
+            else {
+                //if user is not signed in send them to the app to sign in first
+                val intent = Intent(this, SplashActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
+                Toast.makeText(
+                    this,
+                    "Please sign in first",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
         }
     }
 
